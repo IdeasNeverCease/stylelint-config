@@ -1,0 +1,57 @@
+{
+  "author": {
+    "email": "paul@inc.sh",
+    "name": "Paul Anthony Webb"
+  },
+  "bugs": {
+    "url": "https://inc.sh/contact"
+  },
+  "dependencies": {},
+  "description": "Recommended stylelint settings for !NC projects",
+  "devDependencies": {
+    "@inc/eslint-config": "^2019.10.22",
+    "chronver": "^2019.10.2-7.1",
+    "eslint": "^6.7.1",
+    "husky": "^3.1.0",
+    "eslint-config-stylelint": "^11.1.0",
+    "npm-run-all": "^4.1.5",
+    "snazzy": "^8.0.0",
+    "standardx": "^5.0.0",
+    "stylelint": "^12.0.0",
+    "updates": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://code.webb.page/IdeasNeverCease/stylelint-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm run test:lint && npm run increment && git add -A :/"
+    }
+  },
+  "keywords": [
+    "config",
+    "lint",
+    "sass",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "name": "@inc/stylelint-config",
+  "peerDependencies": {
+    "stylelint": ">=12.0.0"
+  },
+  "repository": "https://code.webb.page/IdeasNeverCease/stylelint-config",
+  "scripts": {
+    "format": "eslint . --fix",
+    "increment": "chronver --increment package",
+    "test": "run-s test:*",
+    "test:dependencies": "updates --update ./",
+    "test:lint": "standardx --verbose | snazzy"
+  },
+  "version": "2019.11.28"
+}

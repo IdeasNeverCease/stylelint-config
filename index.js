@@ -11,21 +11,24 @@ module.exports = exports = {
     "at-rule-empty-line-before": [
       "always", {
         ignore: [
-          "after-comment",
-          "first-nested"
-        ],
-        except: [
           "blockless-after-blockless",
-          "blockless-after-same-name-blockless",
           "inside-block"
-        ],
-        message: "Code readability is super important! You are building for humans, not machines."
+        ]
       }
     ],
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": "always-multi-line",
     "at-rule-name-space-after": "always",
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [
+      true, {
+        ignoreAtRules: [
+          "if",
+          "include",
+          "mixin",
+          "use"
+        ]
+      }
+    ],
     "at-rule-no-vendor-prefix": true,
     "at-rule-property-requirelist": [
       {
@@ -42,17 +45,17 @@ module.exports = exports = {
     "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always-multi-line",
-    "block-closing-brace-space-after": "always",
-    "block-closing-brace-space-before": "always",
+    "block-closing-brace-space-after": "always-single-line",
+    "block-closing-brace-space-before": "always-single-line",
     "block-no-empty": true,
     "block-opening-brace-newline-after": "always",
-    "block-opening-brace-newline-before": "never-multi-line",
-    "block-opening-brace-space-after": "always",
+    "block-opening-brace-newline-before": null,
+    "block-opening-brace-space-after": "always-single-line",
     "block-opening-brace-space-before": "always",
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-named": "always-where-possible",
-    "color-no-hex": false,
+    "color-no-hex": null,
     "color-no-invalid-hex": true,
     "comment-empty-line-before": [
       "always", {
@@ -76,16 +79,16 @@ module.exports = exports = {
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
-    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-semicolon-newline-after": null,
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": 2,
     "declaration-block-trailing-semicolon": "always",
     "declaration-colon-newline-after": "always-multi-line",
-    "declaration-colon-space-after": "always",
+    "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
-    "declaration-empty-line-before": "never",
+    "declaration-empty-line-before": null,
     "declaration-no-important": true,
     "declaration-property-unit-blacklist": {
       "font-size": [
@@ -150,7 +153,7 @@ module.exports = exports = {
     ],
     "max-line-length": 120,
     "max-nesting-depth": [
-      2, {
+      3, {
         ignore: [
           "blockless-at-rules",
           "pseudo-classes"
@@ -172,7 +175,13 @@ module.exports = exports = {
     "media-query-list-comma-newline-before": "never-multi-line",
     "media-query-list-comma-space-after": "always",
     "media-query-list-comma-space-before": "never",
-    "no-descending-specificity": true,
+    "no-descending-specificity": [
+      true, {
+        ignore: [
+          "selectors-within-list"
+        ]
+      }
+    ],
     "no-duplicate-at-import-rules": true,
     "no-duplicate-selectors": true,
     "no-empty-first-line": true,
@@ -218,7 +227,7 @@ module.exports = exports = {
     "selector-id-pattern": null,
     "selector-list-comma-newline-after": "always",
     "selector-list-comma-newline-before": "never-multi-line",
-    "selector-list-comma-space-after": "always",
+    "selector-list-comma-space-after": null,
     "selector-list-comma-space-before": "never",
     "selector-max-attribute": 2,
     "selector-max-class": 2,
@@ -227,7 +236,7 @@ module.exports = exports = {
     "selector-max-empty-lines": 0,
     "selector-max-id": 2,
     "selector-max-pseudo-class": 2,
-    "selector-max-specificity": "0, 2, 0",
+    "selector-max-specificity": "0,3,0",
     "selector-max-type": 2,
     "selector-max-universal": 1,
     "selector-nested-pattern": null,
@@ -269,7 +278,7 @@ module.exports = exports = {
     "unit-no-unknown": true,
     "unit-whitelist": null,
     "value-keyword-case": "lower",
-    "value-list-comma-newline-after": "always-multi-line",
+    "value-list-comma-newline-after": null,
     "value-list-comma-newline-before": "never-multi-line",
     "value-list-comma-space-after": "always",
     "value-list-comma-space-before": "never",

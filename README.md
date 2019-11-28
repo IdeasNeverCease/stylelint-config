@@ -9,7 +9,7 @@
 ## Installation
 
 ```bash
-$ npm i @inc/stylelint-config -D
+$ npm i stylelint @inc/stylelint-config -D
 ```
 
 

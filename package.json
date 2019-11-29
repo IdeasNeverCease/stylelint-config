@@ -39,7 +39,7 @@
     "stylelint",
     "stylelint-config"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "main": "index.js",
   "name": "@inc/stylelint-config",
   "peerDependencies": {
@@ -53,5 +53,5 @@
     "test:dependencies": "updates --update ./",
     "test:lint": "standardx --verbose | snazzy"
   },
-  "version": "2019.11.28.4"
+  "version": "2019.11.28.5"
 }

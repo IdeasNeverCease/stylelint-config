@@ -9,7 +9,7 @@
 ## Installation
 
 ```bash
-$ npm i stylelint @inc/stylelint-config -D
+$ npm i stylelint stylelint-order @inc/stylelint-config -D
 ```
 
 
@@ -20,7 +20,10 @@ $ npm i stylelint @inc/stylelint-config -D
 
 ```json
 {
-  extends: "@inc/stylelint-config"
+  extends: "@inc/stylelint-config",
+  plugins: [
+    "stylelint-order"
+  ]
 }
 ```
 

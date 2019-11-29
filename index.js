@@ -210,7 +210,6 @@ module.exports = exports = {
       "at-rules",
       "rules"
     ],
-    "order/properties-alphabetical-order": true,
     "order/properties-order": [
       {
         emptyLineBeforeUnspecified: "never",

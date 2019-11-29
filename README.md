@@ -1,4 +1,4 @@
-# sasslint-config
+# stylelint-config
 
 [![INC](https://img.shields.io/badge/%E2%9C%A8-IdeasNeverCease/stylelint--config-51dcfb.svg?style=flat-square)](https://code.webb.page/IdeasNeverCease/stylelint-config)
 

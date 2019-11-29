@@ -44,7 +44,8 @@
   "main": "index.js",
   "name": "@inc/stylelint-config",
   "peerDependencies": {
-    "stylelint": ">=12.0.0"
+    "stylelint": ">=12.0.0",
+    "stylelint-order": ">=3.1.1"
   },
   "repository": "https://code.webb.page/IdeasNeverCease/stylelint-config",
   "scripts": {
@@ -54,5 +55,5 @@
     "test:dependencies": "updates --update ./",
     "test:lint": "standardx --verbose | snazzy"
   },
-  "version": "2019.11.28.6"
+  "version": "2019.11.28.7"
 }

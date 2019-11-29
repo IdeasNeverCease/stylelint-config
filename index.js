@@ -214,7 +214,6 @@ module.exports = exports = {
     "order/properties-order": [
       {
         groupName: "dimensions",
-        noEmptyLineBetween: true,
         properties: [
           "width",
           "max-width",
@@ -226,7 +225,6 @@ module.exports = exports = {
       },
       {
         groupName: "position",
-        noEmptyLineBetween: true,
         properties: [
           "margin",
           "padding",
@@ -237,7 +235,6 @@ module.exports = exports = {
         ]
       },
       {
-        noEmptyLineBetween: false,
         properties: [
           "align-content",
           "align-items",

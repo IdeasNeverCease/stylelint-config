@@ -207,13 +207,12 @@ module.exports = exports = {
       "at-variables",
       "declarations",
       "custom-properties",
-      "at-rule",
+      "at-rules",
       "rules"
     ],
     "order/properties-alphabetical-order": true,
     "order/properties-order": [
       {
-        emptyLineBefore: "never",
         groupName: "dimensions",
         noEmptyLineBetween: true,
         properties: [
@@ -226,7 +225,6 @@ module.exports = exports = {
         ]
       },
       {
-        emptyLineBefore: "never",
         groupName: "position",
         noEmptyLineBetween: true,
         properties: [
@@ -239,8 +237,6 @@ module.exports = exports = {
         ]
       },
       {
-        emptyLineBefore: "always",
-        groupName: "the rest",
         noEmptyLineBetween: false,
         properties: [
           "align-content",

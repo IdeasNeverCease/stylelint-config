@@ -213,7 +213,9 @@ module.exports = exports = {
     "order/properties-alphabetical-order": true,
     "order/properties-order": [
       {
+        emptyLineBeforeUnspecified: "never",
         groupName: "dimensions",
+        noEmptyLineBetween: true,
         properties: [
           "width",
           "max-width",
@@ -224,7 +226,9 @@ module.exports = exports = {
         ]
       },
       {
+        emptyLineBeforeUnspecified: "never",
         groupName: "position",
+        noEmptyLineBetween: true,
         properties: [
           "margin",
           "padding",
@@ -235,6 +239,9 @@ module.exports = exports = {
         ]
       },
       {
+        emptyLineBeforeUnspecified: "always",
+        groupName: "the rest",
+        noEmptyLineBetween: false,
         properties: [
           "align-content",
           "align-items",
@@ -549,9 +556,6 @@ module.exports = exports = {
           "z-index",
           "zoom"
         ]
-      },
-      {
-        unspecified: "bottomAlphabetical"
       }
     ],
     "property-blacklist": null,

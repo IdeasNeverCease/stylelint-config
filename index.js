@@ -25,6 +25,7 @@ module.exports = exports = {
     "at-rule-no-unknown": [
       true, {
         ignoreAtRules: [
+          "forward",
           "if",
           "include",
           "mixin",
